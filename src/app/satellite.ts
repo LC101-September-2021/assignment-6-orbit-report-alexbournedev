@@ -8,9 +8,9 @@ export class Satellite {
   constructor(
     name: string,
     type: string,
-    operational: boolean,
+    launchDate: string,
     orbitType: string,
-    launchDate: string
+    operational: boolean
   ) {
     this.name = name;
     this.type = type;
