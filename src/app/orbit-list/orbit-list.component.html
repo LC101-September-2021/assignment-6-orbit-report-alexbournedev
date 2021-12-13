@@ -10,7 +10,6 @@
   <tr
     *ngFor="let satellite of satellites; let i = index"
     [class.stripe]="i % 2 === 0"
-    class="data-row"
   >
     <td
       *ngFor="let property of grabKeys(satellite)"
