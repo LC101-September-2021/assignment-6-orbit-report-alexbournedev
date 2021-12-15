@@ -10,6 +10,7 @@
   <tr
     *ngFor="let satellite of satellites; let i = index"
     [class.stripe]="i % 2 === 0"
+    class="data-row"
   >
     <td>{{ satellite.name }}</td>
     <td [class.warning]="satellite.isSpaceDebris()">{{ satellite.type }}</td>

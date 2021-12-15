@@ -25,6 +25,10 @@ table {
   color: #fff;
 }
 
+.data-row {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
 th,
 td {
   text-align: left;
