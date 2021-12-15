@@ -11,12 +11,11 @@
     *ngFor="let satellite of satellites; let i = index"
     [class.stripe]="i % 2 === 0"
   >
-    <td
-      *ngFor="let property of grabKeys(satellite)"
-      [class.warning]="satellite.isSpaceDebris() && property === 'type'"
-    >
-      {{ satellite[property] }}
-    </td>
+    <td>{{ satellite.name }}</td>
+    <td [class.warning]="satellite.isSpaceDebris()">{{ satellite.type }}</td>
+    <td>{{ satellite.launchDate }}</td>
+    <td>{{ satellite.orbitType }}</td>
+    <td>{{ satellite.operational }}</td>
   </tr>
 </table>
 
